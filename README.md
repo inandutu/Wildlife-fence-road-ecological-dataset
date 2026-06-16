@@ -37,7 +37,7 @@ Wildlife Fence Dataset /
 │		   ├── images /
 │		   ├── masks /
 │                └── raw_VoTT /
-├── Metadata
+├── Metadata.csv
 └── README.md
 ```
 
