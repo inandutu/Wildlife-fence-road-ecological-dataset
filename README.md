@@ -24,6 +24,20 @@ Wildlife Fence Dataset /
 │		   ├── images /
 │		   ├── masks /
 │                └── raw_VoTT /
+├── Still Images /
+│	├── Classification /
+│	└──  ── labels.csv
+│	├──  Images /
+│		   ├── double_fence /
+│                └── single_fence /
+│	├── Localization /
+│                └── annotations /
+│	├──  segmentation /
+│		   ├── annotations /
+│		   ├── images /
+│		   ├── masks /
+│                └── raw_VoTT /
+├── Metadata
 └── README.md
 ```
 
