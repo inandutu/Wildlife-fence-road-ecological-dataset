@@ -100,7 +100,7 @@ Official Website:
 
 https://exiftool.org
 
-## Requirements
+##### Requirements
 
 Install dependencies:
 
@@ -113,7 +113,7 @@ For GPS extraction:
 
 * ExifTool
 
-## Annotation Format
+#### Annotation Format
 
 Annotations were created using the VGG Image Annotator (VIA).
 
@@ -141,8 +141,7 @@ segmentation/
     ├── mask_2.png
     └── mask_3.png
 ```
-*
-**Image and Mask Extraction Script**
+
 ## Machine Learning Applications
 
 The dataset supports:
