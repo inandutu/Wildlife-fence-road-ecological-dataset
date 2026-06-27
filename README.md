@@ -4,12 +4,12 @@
 
 This repository contains Python scripts for processing the Wildlife Fence Image Dataset. The tools support annotation conversion, mask generation and merging, and extraction of GPS metadata from image EXIF records.
 
-The repository accompanies the Wildlife Fence Image Dataset hosted on Mendeley Data.
+The repository accompanies the Wildlife Fence Image Dataset hosted on Mendeley Data (Nandutu, Irene (2026), “Wildlife fence road ecological dataset in South Africa”, Mendeley Data, V2, doi: 10.17632/f8gvhzr8j6.2).
 
 ## Repository Structure
 
 ```text
-Wildlife Fence Dataset /
+Wildlife fence road ecological dataset in South Africa/
 │
 ├── Aerial Images /
 │	├── Classification /
@@ -55,9 +55,10 @@ This script converts polygon annotations stored in VIA JSON format into binary m
 * Creates an image-wise directory structure.
 * Stores individual object masks separately.
 
-Generated structure:
+Generated structure of raw_VoTT images:
 
 ```text
+raw_VoTT/
 image_001/
 ├── images/
 │   └── image_001.jpg
@@ -88,7 +89,7 @@ This script extracts image metadata using ExifTool.
 The extracted information is written to:
 
 ```text
-gps_data.csv
+metadata_data.csv
 ```
 
 #### Requirements
@@ -126,7 +127,22 @@ Each object is represented by a polygon:
 ```
 
 These polygons are converted into binary masks for segmentation tasks.
-
+### 3. Merge masks.ipynb
+This is an image, mask extraction, and merging script. The script combines multiple binary mask images for each annotated image into a single segmentation mask. It further extracts the corresponding original images and saves both the merged masks and the original images to separate output directories.
+Generated structure
+```text
+segmentation/
+├── images/
+│   ├── image_1.png
+    ├── image_2.png
+    └── image_3.png
+└── masks/
+    ├── mask_1.png
+    ├── mask_2.png
+    └── mask_3.png
+```
+*
+**Image and Mask Extraction Script**
 ## Machine Learning Applications
 
 The dataset supports:
@@ -152,15 +168,14 @@ Suitable models include:
 
 * U-Net
 * DeepLabV3+
-* SegFormer
 * Mask R-CNN
-* YOLO Segmentation
+* YOLO 
 
 ## Dataset
 
 The complete dataset is available through Mendeley Data:
 
-DOI: [Insert Mendeley DOI]
+DOI: [doi: 10.17632/f8gvhzr8j6.2]
 
 ## Citation
 
