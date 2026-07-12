@@ -23,7 +23,7 @@ Wildlife fence road ecological dataset in South Africa/
 │		   ├── annotations /
 │		   ├── images /
 │		   ├── masks /
-│                └── raw_VoTT /
+│                └── raw_VIA /
 ├── Still Images /
 │	├── Classification /
 │	└──  ── labels.csv
@@ -36,7 +36,7 @@ Wildlife fence road ecological dataset in South Africa/
 │		   ├── annotations /
 │		   ├── images /
 │		   ├── masks /
-│                └── raw_VoTT /
+│                └── raw_VIA /
 ├── Metadata.csv
 └── README.md
 ```
@@ -55,10 +55,10 @@ This script converts polygon annotations stored in VIA JSON format into binary m
 * Creates an image-wise directory structure.
 * Stores individual object masks separately.
 
-Generated structure of raw_VoTT images:
+Generated structure of raw_VIA images:
 
 ```text
-raw_VoTT/
+raw_VIA/
 image_001/
 ├── images/
 │   └── image_001.jpg
@@ -150,6 +150,10 @@ The dataset supports:
 
 * Single fence
 * Double fence
+
+### Localization 
+
+The generated bounding boxes are used to detect an object's location in a single- or double-fence image.
 
 ### Object Detection
 
