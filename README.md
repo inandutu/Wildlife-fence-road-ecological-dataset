@@ -178,7 +178,7 @@ Suitable models include:
 
 The complete dataset is available through Mendeley Data:
 
-DOI: [doi: 10.17632/f8gvhzr8j6.2]
+DOI: 
 
 ## Citation
 
