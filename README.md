@@ -2,9 +2,9 @@
 
 ## Overview
 
-This repository contains Python scripts for processing the Wildlife Fence Image Dataset. The tools support annotation conversion, mask generation and merging, and extraction of GPS metadata from image EXIF records.
+This repository contains Python scripts for processing the Wildlife Fence Image Dataset. The tools support annotation conversion, mask generation and merging.
 
-The repository accompanies the Wildlife Fence Image Dataset hosted on Mendeley Data (Nandutu, Irene (2026), “Wildlife fence road ecological dataset in South Africa”, Mendeley Data, V2, doi: 10.17632/f8gvhzr8j6.2).
+
 
 ## Repository Structure
 
@@ -16,27 +16,27 @@ Wildlife fence road ecological dataset in South Africa/
 │	└──  ── labels.csv
 │	├──  Images /
 │		   ├── double_fence /
-│                └── single_fence /
+           ├── single_fence /
 │	├── Localization /
 │                └── annotations /
 │	├──  segmentation /
 │		   ├── annotations /
-│		   ├── images /
-│		   ├── masks /
-│                └── raw_VIA /
+│		   ├── instance level masks /
+│		   ├── semantic level masks /
+│           
 ├── Still Images /
 │	├── Classification /
 │	└──  ── labels.csv
 │	├──  Images /
 │		   ├── double_fence /
-│                └── single_fence /
+           ├── single_fence /
 │	├── Localization /
 │                └── annotations /
 │	├──  segmentation /
 │		   ├── annotations /
-│		   ├── images /
-│		   ├── masks /
-│                └── raw_VIA /
+│		   ├── instance level masks /
+│		   ├── semantic level masks /
+│          
 ├── Metadata.csv
 └── README.md
 ```
@@ -83,23 +83,12 @@ This script extracts image metadata using ExifTool.
 #### Extracted Information
 
 * Capture image name
-* GPS latitude
-* GPS longitude
 
 The extracted information is written to:
 
 ```text
 metadata_data.csv
 ```
-
-#### Requirements
-
-Install ExifTool before running the script.
-
-Official Website:
-
-https://exiftool.org
-
 ##### Requirements
 
 Install dependencies:
@@ -108,10 +97,6 @@ Install dependencies:
 pip install numpy
 pip install opencv-python
 ```
-
-For GPS extraction:
-
-* ExifTool
 
 #### Annotation Format
 
