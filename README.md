@@ -127,7 +127,7 @@ segmentation/
 
 ## Machine Learning Applications
 
-The dataset supports:
+The dataset supports generated code for v1.0.0:
 
 ### Classification
 
@@ -155,7 +155,7 @@ Suitable models include:
 
 ## Dataset
 
-The complete dataset is available through Zenodo:
+The complete dataset is available through Zenodo: 
 
 DOI: 
 
