@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains Python scripts for processing the Wildlife Fence Image Dataset. The tools support annotation conversion, mask generation and merging.
+This repository contains Python scripts for processing the Wildlife Fence Image Dataset. The tools support annotation conversion, mask generation, and merging.
 
 
 
