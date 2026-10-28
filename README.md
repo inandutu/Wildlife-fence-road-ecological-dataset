@@ -74,19 +74,6 @@ Each mask contains:
 
 The script generates instance-level masks and does not automatically merge masks into semantic segmentation masks.
 
-### 2. extract_gps_metadata.py
-
-This script extracts image metadata using ExifTool.
-
-#### Extracted Information
-
-* Capture image name
-
-The extracted information is written to:
-
-```text
-metadata_data.csv
-```
 ##### Requirements
 
 Install dependencies:
@@ -157,7 +144,7 @@ Suitable models include:
 
 The complete dataset is available through Zenodo: 
 
-DOI: 
+DOI: https://doi.org/10.5281/zenodo.22168842
 
 ## Citation
 
